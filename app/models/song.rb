@@ -17,10 +17,7 @@ class Song < ActiveRecord::Base
       drake = Artist.create(name: "Drake")
       drake.songs << self
     else
-      drake = Artist.all.find do |artist|
-        artist.name == "Drake"
-      end
-      drake.songs << self
-    end
-  end
-end
+     drake.songs << self
+   end
+ end
+     
