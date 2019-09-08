@@ -20,5 +20,6 @@ class Song < ActiveRecord::Base
      drake.songs << self
    end
  end
+end
  
      
